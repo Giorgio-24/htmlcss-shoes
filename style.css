@@ -17,6 +17,12 @@ html {
 .container{
     height: 100vh;
     width: 100%;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 100%;
 }
 
 #uno{
@@ -30,35 +36,46 @@ html {
 #tre{
     background-color: #ffff00;
 }
+ div.img-container{
+     position: absolute;
+     top: 35%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     height: 70%;
+     max-width: 60%;
+     object-fit: contain;
+     margin: 0 auto;
+ }
 
+ div.img-container#della-converse{
+    top: 50%;
+ }
 
-img{
-    position: relative;
-    left: 25%
-    ;
+ div.title-container#n3{
+    top: 80%;
+ }
+
+div.title-container{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 30%;
 }
 
-.title-container{
-    width: 480px;
-    margin: 0 auto;
-}
-
-h1{
+ h1{
     text-align: center;
-}
-
-.converse{
-    position: relative;
-    top: 60px;
+    font-size: 2vw;
 }
 
 #verde{
     color: #008000;
 }
 
-#menu{
+div.container#uno > div#menu{
 text-align: right;
 position: fixed;
+z-index: 1;
 right: 10px;
 top: 30px;
 }
